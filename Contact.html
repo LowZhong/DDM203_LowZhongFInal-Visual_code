@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+<header>
+<a href= "Local Cafe Website Design.html"><img class="logo" src="images/Logo.png" width="95" height="75" alt="Niandai logo"/></a>
+	
+<div class="menuToggle" onClick="toggleMenu();"></div><!--the end of menuToggle-->
+<ul class="navigation">
+<li><a href="#home_content" onClick="toggleMenu();">Home</a></li>
+<li><a href="Menu.html" onClick="toggleMenu();">Menu</a></li>
+<li><a href="Local Cafe Website Design.html #story_content" onClick="toggleMenu();">Story</a></li>
+<li><a href="Contact.html" onClick="toggleMenu();">Contact</a></li>
+</ul>
+</header>
+
+<div id="contactpage">
+<div id="contact1">
+<div class="contact_title">
+	<h1>Contact Us</h1>
+</div><!--the end of contact title-->
+
+<div id="box_contact">
+<div id="contactform">
+<div class="inputBox">
+<input type="text" placeholder="Name">
+</div><!--the end of inputBox-->
+	
+<div class="inputBox">
+<input type="text" placeholder="Email">
+</div><!--the end of inputBox-->
+	
+<div class="inputBox">
+<textarea type="text" placeholder="Ask Something"></textarea>
+</div><!--the end of inputBox-->
+	
+<div class="inputBox">
+<input type="submit" value="Submit">
+</div><!--the end of inputBox-->
+</div><!--the end of contactform-->
+</div><!--the end of box contact-->
+</div><!--the end of contact1-->
+
+<div id="contact2">
+<div id="content2_info">
+<div id="infobox">
+<div class="text">
+	<h2 class="title">Info</h2>
+	<p>In Nian Dai KopiDiam, you’re right to expect something nostalgic. This restaurant cosy, warm and comfortable design is an endearing throwback to the 1980 Malaysia.</p>
+</div><!--the end of text-->
+	
+<div class="text">
+	<h2 class="title">Reproduce 80s</h2>
+	<p>We personally went to Ipoh and some second-hand markets selling old things to find the retro furnishings in the store. There are also some collections that we rarely use, such as the soda can set on the shelf.</p>
+</div><!--the end of text-->
+	
+<div class="text">
+	<h2 class="title">Location</h2>
+	<p>G2, Wisma Setapak 33, Jalan 3/23d, Off Jalan Genting Kelang, Taman Danau Kota, 53100 Kuala Lumpur, Malaysia.</p>
+</div><!--the end of text-->
+</div><!--the end of infobox-->
+</div><!--the end of content2 info-->
+	
+<div id="contactbigtitle">
+<h3>年<br>代<br>
+  茶<br>室<br></h3>
+</div><!--the end of contactbigtitle-->
+
+
+	
+<ul id="social">
+<li><a href="https://www.facebook.com/niandaikopidiam"><img src="images/facebook.png" alt="facebook"/></a></li>
+<li><a href="https://www.instagram.com/explore/tags/%E5%B9%B4%E4%BB%A3%E8%8C%B6%E5%AE%A4/"><img src="images/instagram.png" alt="instagram"/></a></li>
+<li><a href="#"><img src="images/gmail.png" alt="gmail"/></a></li>
+<li><a href="#"><img src="images/whatsapp.png" alt="whatsapp"/></a></li>
+</ul>
+</div><!--the end of contact2-->
+
+</div><!--the end of contactpage-->
+</div><!--the end of container-->
+	
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky", window.scrollY > 0);
+});	
+
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').click(function(){
+		
+		$(this).siblings().removeClass()
+	})
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Niandai KopiTiam</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+<header>
+<a href= "#"><img class="logo" src="images/Logo.png" width="95" height="75" alt="Niandai logo"/></a>
+	
+<div class="menuToggle" onClick="toggleMenu();"></div><!--the end of menuToggle-->
+<ul class="navigation">
+<li><a href="#home_content" onClick="toggleMenu();">Home</a></li>
+<li><a href="Menu.html" onClick="toggleMenu();">Menu</a></li>
+<li><a href="#story_content" onClick="toggleMenu();">Story</a></li>
+<li><a href="Contact.html" onClick="toggleMenu();">Contact</a></li>
+</ul>
+</header>
+
+<div id="home_content">
+<div class="hcontentbox">
+<div class="bigimgbox">
+<img src="images/Food1.jpg" alt="bigfoodphoto"/>
+</div><!--the end of bigimgbox-->
+<h1 class="titleBox">年代<span>NIAN DAI KOPITIAM</span>茶室</h1>
+</div><!--the end of hcontentbox-->
+</div><!--the end of home content-->
+	
+<section id="photo" class="photo">
+<div id="story_content">
+<div class="storybox">
+<div class="storyimgbox">
+<img src="images/Rectangle 282.png" alt="cookies">
+</div><!--the end of storyimgbox-->
+<div class="sinfoBox">
+<h2 class="titletext">Our Story</h2>
+<p>The six "old friends" who were all born in the 1980s met in the most beautiful times and 
+have gone through 10 years of entrepreneurship together. They decided to work together again to create a place that evokes childhood memories, combining their collections and old toys collected from various places with the 
+restaurant, sharing nostalgic memories with visitors, and stepping into the new era 
+together.</p>
+</div><!--the end of sinfoBox-->
+</div><!--the end of storybox-->
+	
+<div class="storybox2">
+<div class="storyimgbox2">
+<img src="images/Rectangle 283.png" alt="shop">
+</div><!--the end of storyimgbox-->
+</div><!--the end of storybox-->
+	
+<div class="storybox">
+<div class="sinfoBox2">
+<p>The exterior adopts the theme of "Ama's Home", from the red bricks on the walls, the retro-printed floor tiles on the ground, to the rattan chairs placed outdoors. And the dark green door and window frames echo the word "age". Stepping into the room, the most eye-catching corner is the display stand on the right. There are many antique toys that can evoke childhood memories on the shelf, such as the old-fashioned electric fans, radios and matchboxes placed in the top row. They are all small objects that make people smile when they see it.</p></div><!--the end of sinfoBox2-->
+<div class="storyimgbox">
+<img src="images/Rectangle 284.png" alt="shop_decoration">
+</div><!--the end of storyimgbox-->
+</div><!--the end of storybox-->
+</div><!--the end of story content-->
+</section><!--the end of photo-->
+
+<section id="description_content" class="description_content">
+<div class="desbox">
+<div class="desimgbox">
+<img src="images/Group 257.png" width="183" height="113" alt="icon1"/>
+</div><!--the end of desimgbox-->
+<div class="destext">
+<h3 class="destitletext">Provide Delivery Services</h3>
+<p>Grab, FoodPanda, ShopeeFood</p>
+</div><!--the end of destext-->
+</div><!--the end of desbox-->
+	
+<div class="desbox">
+<div class="desimgbox">
+<img src="images/Group 255.png" width="134" height="113" alt="icon2"/>
+</div><!--the end of desimgbox-->
+<div class="destext">
+<h4 class="destitletext">Business Hours</h4>
+<p>10 A.M. - 10 P.M.</p>
+</div><!--the end of destext-->
+</div><!--the end of desbox-->
+	
+<div class="desbox">
+<div class="desimgbox">
+<img src="images/Group 253.png" width="197" height="98" alt="icon3"/>
+</div><!--the end of desimgbox-->
+<div class="destext">
+<h5 class="destitletext">Ensure The Quality Of Food</h5>
+<p>Always serves fresh, hot food to the customers.</p>
+</div><!--the end of destext-->
+</div><!--the end of desbox-->
+</section><!--the end of description_content-->
+	
+<section id="home_menuContent" class="home_menuContent">
+<div class="hmbox">
+<div class="hmimgbox">
+<img src="images/Rectangle 285.png" width="700" height="607" alt="food2"/>
+</div><!--the end of imgbox-->
+<div id="hmtitletext1">
+<div id="hmtitletext2">
+<div class="hmtitletext">
+<h6>Explore The Delicious</h6>
+</div><!--the end of hmtitletext1-->
+<div class="btn">
+<a class="btn" href="Menu.html">Find More</a></div><!--the end of btn-->
+</div><!--the end of hmtitletext2-->
+</div><!--the end of hmtitletext-->
+</div><!--the end of hmbox-->
+</section><!--the end of home menu content-->
+
+<div id="footer">
+<div class="footer">
+<a class="TOS" href="#">Terms Of Services</a>
+<a class="Contactus" href="#">Contact Us</a>
+<a class="PP" href="#">Privacy Policy</a>
+</div><!--the end of footer1-->
+<div class="copyrighttext">
+<p>Copyright &copy; 2021. <a href="#">Nian Dai Kopitiam</a> Inc. All Rights Reserved.</p>
+</div><!--the end of copyrightext-->
+</div><!--the end of footer-->
+</div><!--the end of container-->
+	
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky", window.scrollY > 0);
+});	
+
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').click(function(){
+		
+		$(this).siblings().removeClass()
+	})
+}
+</script>
+</body>
+</html>

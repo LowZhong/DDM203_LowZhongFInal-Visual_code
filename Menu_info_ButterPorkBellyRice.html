@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Menu_info_ButterPorkBellyRice</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+<header>
+<a href= "Local Cafe Website Design.html"><img class="logo" src="images/Logo.png" width="95" height="75" alt="Niandai logo"/></a>
+	
+<div class="menuToggle" onClick="toggleMenu();"></div><!--the end of menuToggle-->
+<ul class="navigation">
+<li><a href="#home_content" onClick="toggleMenu();">Home</a></li>
+<li><a href="Menu.html" onClick="toggleMenu();">Menu</a></li>
+<li><a href="Local Cafe Website Design.html #story_content" onClick="toggleMenu();">Story</a></li>
+<li><a href="Contact.html" onClick="toggleMenu();">Contact</a></li>
+</ul>
+</header>
+
+<div id="menu_info6">
+<div class="menuinfoimgbox">
+<div class="menuinfoimg">
+<img src="images/foodbutterporkbelly.jpg" alt="menuinfoimg"/>
+</div><!--the end of menuinfoimg-->
+</div><!--the end of menuinfoimgbox-->
+<div class="menuinfotextbox">
+<h1>Butter Pork Belly Rice奶油五花肉饭</h1>
+<p>Rice with butter sauce and pork belly</p>
+<div class="price">
+<p>RM 16.90</p>
+</div><!--the end of price-->
+</div><!--the end of menuinfotextbox-->
+</div><!--the end of menu info-->
+
+<div id="footer">
+<div class="footer">
+<a class="TOS" href="#">Terms Of Services</a>
+<a class="Contactus" href="#">Contact Us</a>
+<a class="PP" href="#">Privacy Policy</a>
+</div><!--the end of footer1-->
+<div class="copyrighttext">
+<p>Copyright &copy; 2021. <a href="#">Nian Dai Kopitiam</a> Inc. All Rights Reserved.</p>
+</div><!--the end of copyrightext-->
+</div><!--the end of footer-->
+</div><!--the end of container-->
+	
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+	const header = document.querySelector('header');
+	header.classList.toggle("sticky", window.scrollY > 0);
+});	
+
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').click(function(){
+		
+		$(this).siblings().removeClass()
+	})
+}
+</script>
+</body>
+</html>
